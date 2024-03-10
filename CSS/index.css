@@ -1,3 +1,24 @@
+/* Universal Styles*/
+
 body {
-    background-image: url(https://images.app.goo.gl/8kmwkTSPdujNCpXM7);
+    background-image: url(https://www.mistersmith.co.uk/wp-content/uploads/2022/09/Eucalyptus_Wallpaper_Osborne_Little_W7613-01-1466x1536.jpg);
 }
+
+img {
+height: 650px;
+border: 50px solid #9AAB89;
+border-radius: 50px;
+}
+
+h1, h2 {
+background-color: #FFFFFF;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  font-style: italic;
+}
+
