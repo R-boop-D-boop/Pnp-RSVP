@@ -3,6 +3,14 @@
     box-sizing: border-box;
   }
   
+  /*Fonts*/
+  @font-face {
+    font-family: 'Whisper';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/whisper/v5/q5uHsoqtKftx74K9qi5IBj5eiYQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
   body {
       background-image: url(https://www.mistersmith.co.uk/wp-content/uploads/2022/09/Eucalyptus_Wallpaper_Osborne_Little_W7613-01-1466x1536.jpg);
   }
@@ -14,14 +22,34 @@
   
   h1, h2 {
   background-color: #FFFFFF;
+  font-family: 'Whisper';
   }
   
   h1 {
     font-weight: bold;
+    font-style: italic;
   }
   
   h2 {
    
+  }
+  
+  button {
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0px 5px;
+  }
+  
+  button:hover {
+    cursor:pointer;
+  }
+  
+  button:active {
+    margin-top: 5px;
+    color: #808080;
+    box-shadow: 0px 0px;
   }
   
   /* Back of the floating green card */
@@ -40,16 +68,7 @@
     bottom: 450px;
   }
   
-  .poppy {
-    font-style: italic;
-    font-weight: lighter;
-  }
-  
-  .surrey {
-    
-  }
-  
-  .button {
+  .word {
     background-color: #9AAB89;
     border: 2px solid black;
     border-radius: 5px;
