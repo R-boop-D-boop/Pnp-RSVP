@@ -4,6 +4,7 @@
   }
   
   /*Fonts*/
+
   @font-face {
     font-family: 'Whisper';
     font-style: normal;
@@ -14,7 +15,10 @@
   body {
       background-image: url(https://www.mistersmith.co.uk/wp-content/uploads/2022/09/Eucalyptus_Wallpaper_Osborne_Little_W7613-01-1466x1536.jpg);
   }
+
+  
   /* Main Image*/
+
   img {
   height: 450px;
   border-radius: 30px;
@@ -53,6 +57,7 @@
   }
   
   /* Back of the floating green card */
+
   .cardback {
   border: 50px solid #9AAB89;
   border-radius: 50px;
@@ -61,6 +66,7 @@
   }
   
   /* Two pieces of text and the buttons*/
+
   #info {
     display: block;
     position: relative;
