@@ -1,73 +1,74 @@
+* {
+  box-sizing: border-box;
+}
 
-  html {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(11, 1fr);
-  }
-  /*Fonts*/
+h3 {
+  text-align: center;
+}
 
-  @font-face {
-    font-family: 'Whisper';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/whisper/v5/q5uHsoqtKftx74K9qi5IBj5eiYQ.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  
-  header {
-    grid-row: 1 / span 2;
-    grid-column: 1 / span 12;
-  }
+img {
+height: 300px;
+width: auto;
+margin: 20px;
+border-radius: 10px;
+}
 
-  h1, h2 {
-  font-family: 'Whisper';
-  }
-  
-  h1 {
-    font-weight: bold;
-  }
-  
-  footer {
-    grid-row: 10 / span 3;
-    grid-column: 1 / span 12;
-  }
+#container {
+  display: grid;
+  grid-template: "header header header" 1fr
+  "sidebar main main" 1fr
+  "sidebar main main" 1fr
+  "sidebar main main" 1fr
+  "sidebar main main" 1fr
+  "footer footer footer" 1fr / 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
 
-  /* Back of the floating green card */
+.header,
+.main,
+.sidebar,
+.footer {
+  border: solid black 2px;
+  border-radius: 10px;
+}
 
-  .card {
-  grid-row: 3 / span 6;
-  grid-column: 3 / span 6;
-  border-radius: 10%;
-  background-color: #9AAB89;
-  }
-  
-  /* Two pieces of text and the buttons*/
+.header {
+background-color: antiquewhite;
+grid-column: 1 / span 5;
+grid-row: 1;
+}
 
-  .img {
-    grid-row: 4 / 7;
-    grid-column: 4 / 6;
-    border-radius: 10%;
-  }
-  
-  .word {
-  grid-row: 7 /9;
-  grid-column: 4 / 6;
-  }
+.header
+button {
+display: inline-block;
+padding: 10px;
+border: solid black 2px;
+border-radius: 10px ;
+margin: 10px;
+width: 30%;
+text-align: center;
 
-  .word2 {
-    grid-row: 4 / 9;
-    grid-column: 7 / 11;
-  }
+}
+.sidebar {
+background-color: aqua;
+grid-column: 1 / span 1;
+grid-row: 2 / span 3;
+}
 
-  .word, 
-  .word2{
-    background-color: #9AAB89;
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 10px;
-    text-align: center;
-    width: 50%;
-    justify-items: center;
-    
-  }
+.main {
+background-color: blueviolet;
+grid-column: 2 / span 4;
+grid-row: 2 / span 3;
+}
 
+.main,
+image,
+p {
+  display: inline-block;
+}
+
+.footer {
+background-color: brown;
+grid-column: 1 / span 5;
+grid-row: 5;
+}
