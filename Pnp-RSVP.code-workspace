@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "CSS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Pnp-RSVP"
+	},
+	"extensions": {
+		"recommendations": [
+			"ritwickdey.liveserver"
+		]
+	}
+}

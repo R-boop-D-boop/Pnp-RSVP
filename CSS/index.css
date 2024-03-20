@@ -1,5 +1,9 @@
 
-  
+  html {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+  }
   /*Fonts*/
 
   @font-face {
@@ -9,117 +13,61 @@
     src: url(https://fonts.gstatic.com/s/whisper/v5/q5uHsoqtKftx74K9qi5IBj5eiYQ.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
-  body {
-      background-image: url(https://www.mistersmith.co.uk/wp-content/uploads/2022/09/Eucalyptus_Wallpaper_Osborne_Little_W7613-01-1466x1536.jpg);
+  
+  header {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 12;
   }
 
-  
   h1, h2 {
-  background-color: #FFFFFF;
   font-family: 'Whisper';
   }
   
   h1 {
     font-weight: bold;
-    font-style: italic;
   }
   
-  h2 {
-   
+  footer {
+    grid-row: 10 / span 3;
+    grid-column: 1 / span 12;
   }
-  
-  button {
-    --color: #00A97F;
-    --color2: rgb(10, 25, 30);
-    padding: 0.8em 1.75em;
-    background-color: transparent;
-    border-radius: 6px;
-    border: .3px solid var(--color);
-    transition: .5s;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    z-index: 1;
-    font-weight: 300;
-    font-size: 17px;
-    font-family: 'Roboto', 'Segoe UI', sans-serif;
-    text-transform: uppercase;
-    color: var(--color);
-   }
-   
-   button::after, .button::before {
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    transform: skew(90deg) translate(-50%, -50%);
-    position: absolute;
-    inset: 50%;
-    left: 25%;
-    z-index: -1;
-    transition: .5s ease-out;
-    background-color: var(--color);
-   }
-   
-   button::before {
-    top: -50%;
-    left: -25%;
-    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
-   }
-   
-   button:hover::before {
-    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
-   }
-   
-   button:hover::after {
-    transform: skew(45deg) translate(-50%, -50%);
-   }
-   
-   button:hover {
-    color: var(--color2);
-   }
-   
-   button:active {
-    filter: brightness(.7);
-    transform: scale(.98);
-   }
-  
+
   /* Back of the floating green card */
 
-  .cardback {
-  display: grid;
-  grid-template: repeat(10,1fr) / repeat(10, 1fr)
-  border: 50px solid #9AAB89;
-  border-radius: 50px;
-  margin: 200px 50px;
+  .card {
+  grid-row: 3 / span 6;
+  grid-column: 3 / span 6;
+  border-radius: 10%;
   background-color: #9AAB89;
   }
   
   /* Two pieces of text and the buttons*/
 
-  #info {
-    grid-column: 5 / span 3;
-    grid-row: 7 / span 2;
-    left: 500px;
-    bottom: 450px;
-  }
-
   .img {
-    grid-column: 1 / span 3;
-    grid-row: 3;
+    grid-row: 4 / 7;
+    grid-column: 4 / 6;
     border-radius: 10%;
-    height: 500px;
   }
   
   .word {
+  grid-row: 7 /9;
+  grid-column: 4 / 6;
+  }
+
+  .word2 {
+    grid-row: 4 / 9;
+    grid-column: 7 / 11;
+  }
+
+  .word, 
+  .word2{
     background-color: #9AAB89;
     border: 2px solid black;
-    grid-column: 7 / span 3;
-    grid-row: 9 / span 2;
-    border-radius: 5px;
-    padding: 30px;
-    margin: 50px;
-    width: 350px;
+    border-radius: 20px;
+    padding: 10px;
     text-align: center;
-    position: left;
+    width: 50%;
+    justify-items: center;
+    
   }
+
